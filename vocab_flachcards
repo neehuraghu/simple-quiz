@@ -1,0 +1,32 @@
+import random
+
+class flashcard:
+	def __init__(self):
+	
+		self.questions={
+          'What are the needs for regulation of banking activities':
+          'Unsound lending practices by banks, hazardous dealings in foreign currencies, liquidity crisis and damaging effect of a bank collapse on individual and corporate customers.',
+					'1907':'US bankers panic',
+					'1980s':'Collapse of Johnson Matthey Bank',
+					'2007-2008':'Global Financial Crisis'
+    }
+		
+	def quiz(self):
+		while (True):
+		
+			questions, ans = random.choice(list(self.questions.items()))
+			
+			print("Question: {}".format(questions))
+			user_answer = input()
+			if(user_answer.lower() == ans.lower()):
+				print("Correct answer")
+			else:
+				print("Wrong answer")
+				
+			option = int(input("enter 0 , if you want to play again : "))
+			if (option):
+				break
+
+print("welcome to Banking Law quiz ")
+fc=flashcard()
+fc.quiz()
