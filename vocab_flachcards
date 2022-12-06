@@ -4,11 +4,7 @@ class flashcard:
 	def __init__(self):
 	
 		self.questions={
-          'What are the needs for regulation of banking activities':
-          'Unsound lending practices by banks, hazardous dealings in foreign currencies, liquidity crisis and damaging effect of a bank collapse on individual and corporate customers.',
-					'1907':'US bankers panic',
-					'1980s':'Collapse of Johnson Matthey Bank',
-					'2007-2008':'Global Financial Crisis'
+          'Question' : 'Answer'
     }
 		
 	def quiz(self):
